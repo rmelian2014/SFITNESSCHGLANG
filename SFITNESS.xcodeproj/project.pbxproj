@@ -83,6 +83,8 @@
 		49DB55552088A3200034ED7C /* PurchaseTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = 49DB55542088A3200034ED7C /* PurchaseTerm.m */; };
 		49DB557C2089C53D0034ED7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49DB557B2089C53D0034ED7C /* GoogleService-Info.plist */; };
 		68F7756CF5EA9B8EE3319CE5 /* libPods-SFITNESS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECE3D876F902DF380E2A224 /* libPods-SFITNESS.a */; };
+		BEDC544F2099AAE600CBF01D /* Localizable_en.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEDC544E2099AAE500CBF01D /* Localizable_en.strings */; };
+		BEDC54512099AB0500CBF01D /* Localizable_cn.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEDC54502099AB0400CBF01D /* Localizable_cn.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -232,6 +234,8 @@
 		49DB55542088A3200034ED7C /* PurchaseTerm.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PurchaseTerm.m; sourceTree = "<group>"; };
 		49DB557B2089C53D0034ED7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		57EB66F231E933B56260DD66 /* Pods-SFITNESS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFITNESS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SFITNESS/Pods-SFITNESS.debug.xcconfig"; sourceTree = "<group>"; };
+		BEDC544E2099AAE500CBF01D /* Localizable_en.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable_en.strings; sourceTree = "<group>"; };
+		BEDC54502099AB0400CBF01D /* Localizable_cn.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable_cn.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +279,7 @@
 		1B3616842018CEB600D41827 /* SFITNESS */ = {
 			isa = PBXGroup;
 			children = (
+				BEDC544C2099AAE500CBF01D /* Resources */,
 				1B561E53205FAA1800F39B3B /* SFITNESS.entitlements */,
 				1B40195D20231C04004FE7BE /* User.h */,
 				1B40195620231C04004FE7BE /* User.m */,
@@ -482,6 +487,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BEDC544C2099AAE500CBF01D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC544D2099AAE500CBF01D /* Localization */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BEDC544D2099AAE500CBF01D /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC54502099AB0400CBF01D /* Localizable_cn.strings */,
+				BEDC544E2099AAE500CBF01D /* Localizable_en.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -565,12 +587,14 @@
 				1BBC407C2076274700FD7D0B /* CERangeSlider-Info.plist in Resources */,
 				1BBC40832076274700FD7D0B /* Default.png in Resources */,
 				1BBC407B2076274700FD7D0B /* Default@2x.png in Resources */,
+				BEDC54512099AB0500CBF01D /* Localizable_cn.strings in Resources */,
 				1BBC40782076274700FD7D0B /* CEViewController.xib in Resources */,
 				1B3616952018CEB600D41827 /* LaunchScreen.storyboard in Resources */,
 				1B3616922018CEB600D41827 /* Assets.xcassets in Resources */,
 				1BBC40802076274700FD7D0B /* Default-568h@2x.png in Resources */,
 				49DB557C2089C53D0034ED7C /* GoogleService-Info.plist in Resources */,
 				1B3616902018CEB600D41827 /* Main.storyboard in Resources */,
+				BEDC544F2099AAE600CBF01D /* Localizable_en.strings in Resources */,
 				1BBC40792076274700FD7D0B /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

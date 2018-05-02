@@ -28,5 +28,7 @@
 
 -(void)setupTabBar;
 
++ (NSString*)getLocalizedText:(NSString*)toLocalize;
+
 @end
 

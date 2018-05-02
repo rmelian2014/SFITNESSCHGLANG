@@ -52,25 +52,17 @@
 }
 
 -(void)viewDidAppear:(BOOL)animated{
-    
-    if ([sLanguage isEqualToString:@"CN"]){
-        
-        self.navigationController.navigationBar.topItem.title = @"更改语言";
-        
-    }else{
-        self.navigationController.navigationBar.topItem.title = @"CHANGE LANGUAGE";
-    }
+	//using new code for internationalization
+	self.navigationController.navigationBar.topItem.title = [AppDelegate getLocalizedText:@"CHANGE LANGUAGE"];
 }
 
 - (IBAction)btnEnglish:(id)sender {
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:@"EN" forKey:@"txtLanguage"];
-    
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UITabBarController *tabView = [storyboard instantiateViewControllerWithIdentifier:@"profileView"];
-    [self presentViewController:tabView animated:YES completion:nil];
-    
+	
+	[(AppDelegate*)[UIApplication sharedApplication].delegate setupTabBar];
+	[self.navigationController popViewControllerAnimated:YES];
 }
 
 - (IBAction)btnChinese:(id)sender {
@@ -82,17 +74,6 @@
     //[self presentViewController:tabBarController animated:YES completion:nil];
     
     [(AppDelegate*)[UIApplication sharedApplication].delegate setupTabBar];
-    
-    //UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-   // UITabBarController *tabView = [storyboard instantiateViewControllerWithIdentifier:@"profileView"];
-    //tabView.selectedIndex=0; //=== This is to choose which Tab, starts with 0,1,2,3,4
-    //[self presentViewController:tabView animated:YES completion:nil];
-    
-   //UITabBarController * tabBarController = (UITabBarController*)[[[UIApplication sharedApplication] keyWindow] rootViewController];
-
-    
-    //UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    //UITabBarController *tabView = [storyboard instantiateViewControllerWithIdentifier:@"profileView"];
-    //[self presentViewController:tabView animated:YES completion:nil];
+	[self.navigationController popViewControllerAnimated:YES];
 }
 @end

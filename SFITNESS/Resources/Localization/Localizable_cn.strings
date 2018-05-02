@@ -1,0 +1,17 @@
+/* 
+  Localizable_en.strings
+  SFITNESS
+
+  Created by Reinier Melian Massip on 5/2/18.
+  Copyright © 2018 my.com.bro. All rights reserved.
+*/
+
+"CLASS" = "课程";
+
+"GYM" = "健身房";
+
+"SEARCH" = "搜索";
+
+"MORE" = "更多";
+
+"CHANGE LANGUAGE" = "更改语言";
